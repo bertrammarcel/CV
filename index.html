@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://www.zalando.de/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 <body>
 
   <div class="container">
     <div class="row">
       <div class="logo">
-        Hi <img src="https://mosaic02.ztat.net/nvg/z-header-fragment/zalando-logo/logo_default.svg"> - we are Marcel & Daniel
+        Hi <img src="https://mosaic02.ztat.net/nvg/z-header-fragment/zalando-logo/logo_default.svg"> - we are Marcel & Daniel ...
       </div>
     </div>
 
-    <div class="row m-top">
+    <div class="row m-top"
+    data-aos="fade-up"
+data-aos-offset="0"
+data-aos-delay="500"
+data-aos-duration="500"
+data-aos-easing="ease-in-out"
+data-aos-anchor-placement="top-center">
       <div class="nine columns">
         <h1>Design is teamwork. <br/> And leadership is teamwork.
         <h3 class="sub">Therefore we want to apply as team for the vacant position as Directors of Design - Design Systems.</h3>
@@ -25,20 +32,37 @@
       </div>
     </div>
 
+    <div
+data-aos="fade-up"
+data-aos-offset="0"
+data-aos-delay="3000"
+data-aos-duration="500"
+data-aos-easing="ease-in-out"
+data-aos-anchor-placement="top-center">
     <div class="row">
       <img class="u-max-full-width m-top" src="header.png">
     </div>
 
-    <div class="row">
+    <div class="row"
+    >
       <div class="nine columns">
         <h3>We are complementary counterparts. For each topic at least one of us is an expert and the other one has some experience.</h3>
         <h3 class="sub">With highly available excitement and enthusiasm. If one is down, the other is up.</h3>
       </div>
     </div>
 
+  </div>
+
     <div class="row"><hr></div>
 
-    <div class="row">
+    <div class="row"
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="300"
+    data-aos-easing="ease-in-out"
+    data-aos-anchor-placement="top-bottom"
+    >
       <div class="six columns">
         <div class="row">
         <h2 style="margin-top:0;">Dear Mr. Young</h2>
@@ -79,10 +103,24 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row"
+    data-aos="fade-up"
+    data-aos-offset="-100"
+    data-aos-delay="50"
+    data-aos-duration="300"
+    data-aos-easing="ease-in-out"
+    data-aos-anchor-placement="top-center">
       <h3 class="sub">We are looking forward to hearing from you and get to know us better in a personal conversation.</h3>
     </div>
 
+  <div
+    data-aos="fade-up"
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="300"
+    data-aos-easing="ease-in-out"
+    data-aos-anchor-placement="top-center"
+    >
     <div class="row"><hr></div>
 
     <div class="row">
@@ -102,11 +140,18 @@
       </div>
 
     </div> 
+  </div>
 
+  <div    
+  data-aos="fade-up"
+  data-aos-offset="0"
+  data-aos-delay="50"
+  data-aos-duration="300"
+  data-aos-easing="ease-in-out"
+  data-aos-anchor-placement="top-center">
     <div class="row"><hr></div>
 
     <div class="row">
-
       <div class="four columns">
         <h2 style="margin-top:0;">Hi, I am Marcel</h2>
         <img src="marcel.png" class="pic m-bottom">
@@ -120,16 +165,29 @@
       </div>
 
     </div> 
+  </div>
 
-    <div class="row m-top-2" style="text-align:right;">
+    <div class="row m-top-2" style="text-align:right;"
+    data-aos="fade-up"
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="300"
+    data-aos-easing="ease-in-out"
+    data-aos-anchor-placement="top-center"
+    >
 
-      <div class="eight columns">
+      <div class="three columns" style="float:right;">
         <h2 style="margin-top:0;">And this is me, Daniel</h2>
-        <p>Sometimes people think that we are genius. But this is not true. We are only two guys who think twice things through and challenge each other.</p>
+        <img src="daniel.png" class="pic m-bottom">
       </div>
 
-      <div class="three columns">
-        <img src="daniel.png" class="pic">
+      <div class="eight columns" style="float:left;">
+        <p>My passion are strong brands. I want to help shape them and use the power to create user-centred products. 
+          I started my professional career at Borussia Dortmund in the successful years 2011-2014 in the online sector. 
+          There I was mainly responsible for the most important platforms BVB.de and Shop.BVB.de</p>
+        <p>After an emotionally influential time my journey went to Zuffenhausen. Here at Porsche I have been working for six years. 
+          I started in the online store department and now I am working together with Marcel in the UX Design Ops team.</p>
+        <p>My main focus is on UX Strategy and Operations and I support the Product Management, Product Owners and UXDs in the development of features.</p>
       </div>
 
     </div> 
@@ -145,4 +203,8 @@
 
 
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body></html>

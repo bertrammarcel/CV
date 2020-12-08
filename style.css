@@ -142,7 +142,7 @@ a {
   text-decoration:none;}
 a:hover {
   color:#000;
-  border-bottom:1px solid #efdcd9; 
+  border-bottom:1px solid #FF6903; 
   transition:.5s;}
 
 /* Lists
@@ -175,21 +175,6 @@ ul > li:before {
   position:absolute;
   margin-left: -1.2em;
 }
-
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
-th:first-child,
-td:first-child {
-  padding-left: 0; }
-th:last-child,
-td:last-child {
-  padding-right: 0; }
 
 
 /* Spacing
