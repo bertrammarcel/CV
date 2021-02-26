@@ -95,8 +95,8 @@ body {
 
 .box {display:flex;background:#F3F2EE;padding: 20px; height:150px;justify-content:flex-end; flex-direction: column;  flex-direction: column; } 
 .box span {font-size:36px; margin-bottom:5px;} 
-.button {background:#36558A;padding:15px;color:#FFF;text-decoration:none;border:none;}
-.button:hover{border:none;background:#6B8CC2;color:#FFF;}
+.button {background:#D1410C;padding:15px;color:#FFF;text-decoration:none;border:none;}
+.button:hover{border:none;background:#F05537;color:#FFF;}
 
 .sub{font-family: 'IBM Plex Serif', serif;}
 .subhead{font-family: 'IBM Plex Serif', serif; font-size:1.4rem;margin-bottom:2rem;margin-left:0;}
@@ -123,8 +123,8 @@ a {
   border-bottom:1px solid #000;
   text-decoration:none;}
 a:hover {
-  color:#000;
-  border-bottom:1px solid #35548B; 
+  color:#F05537;
+  border-bottom:1px solid #F05537; 
   transition:.5s;}
 
 /* Lists
