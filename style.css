@@ -101,7 +101,7 @@ body {
 .sub{font-family: 'IBM Plex Serif', serif;}
 .subhead{font-family: 'IBM Plex Serif', serif; font-size:1.4rem;margin-bottom:2rem;margin-left:0;}
 
-.footer {background-image:url(../images/logo-small.png);background-repeat: no-repeat;background-position:right top; height:33px;margin-bottom:3rem;padding-top:5px;font-size:14px;color:#000;}
+.footer {height:33px;margin-bottom:3rem;padding-top:5px;font-size:14px;color:#000;}
 .footer a{color:#000;border:0;}
 .footer a:hover{opacity:.5;border:0;}
 
