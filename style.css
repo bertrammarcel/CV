@@ -95,7 +95,7 @@ body {
 
 .box {display:flex;background:#F3F2EE;padding: 20px; height:150px;justify-content:flex-end; flex-direction: column;  flex-direction: column; } 
 .box span {font-size:36px; margin-bottom:5px;} 
-.button {background:#D1410C;padding:15px;color:#FFF;text-decoration:none;border:none;}
+.button {display:inline-block;background:#D1410C;padding:15px;color:#FFF;text-decoration:none;border:none;}
 .button:hover{border:none;background:#F05537;color:#FFF;}
 
 .sub{font-family: 'IBM Plex Serif', serif;}
