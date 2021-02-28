@@ -97,6 +97,8 @@ body {
 .box span {font-size:36px; margin-bottom:5px;} 
 .button {display:inline-block;background:#D1410C;padding:15px;color:#FFF;text-decoration:none;border:none;}
 .button:hover{border:none;background:#F05537;color:#FFF;}
+label {display:block;margin: 1rem 0;}
+input {padding:15px;margin-right:5px;outline-color: #000;}
 
 .sub{font-family: 'IBM Plex Serif', serif;}
 .subhead{font-family: 'IBM Plex Serif', serif; font-size:1.4rem;margin-bottom:2rem;margin-left:0;}
