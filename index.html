@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=IBM+Plex+Serif&display=swap" rel="stylesheet">
   </head>
 <body>
-
+<main>
   <div class="container">
     <div class="row">
       <div class="intro">
@@ -48,7 +48,7 @@ data-aos-anchor-placement="top-bottom">
   <picture>
     <source srcset="header.webp" type="image/webp">
     <source srcset="header.png" type="image/png"> 
-    <img class="u-max-full-width m-top" src="header.png" role="presentation">
+    <img class="u-max-full-width m-top" src="header.png" alt="">
   </picture>
 </div>
 
@@ -103,7 +103,7 @@ data-aos-easing="ease-in-out"
 data-aos-anchor-placement="top-center">
   <h3 class="sub">We are looking forward to hearing from you and getting to know each other better in a personal conversation.</h3>
   <div class="m-top"><a href="https://calendly.com/marcelanddaniel/15min?month=2021-03" class="button">Book your 15-min remote meeting</a></div>
-  <img src="sign.png" role="presentation" class="m-top">
+  <img src="sign.png" alt="" class="m-top">
 </div>
 
 <div
@@ -119,7 +119,7 @@ data-aos-anchor-placement="top-center"
 <h2>Interested in learn how to efficiently create exciting user experiences?</h2>
 <div class="row">
   <div class="four columns">
-    <img src="academy.svg" width="100%" style="max-width:250px;" role="presentation">
+    <img src="academy.svg" width="100%" style="max-width:250px;" alt="">
   </div>
 
   <div class="eight columns">
@@ -255,61 +255,11 @@ data-aos-anchor-placement="top-center"
 action="https://formspree.io/f/xknplrgq"
 method="POST"
 >
-<label>Subscribe with your e-mail to get notified:</label>
-<input type="email" name="email" />
-<button id="my-form-button" class="button">Subscribe</button>
+<label for="email">Subscribe with your e-mail to get notified:</label>
+<input type="email" name="email" id="email"/>
+<button id="my-form-button" type="submit" class="button">Subscribe</button>
 <p id="my-form-status"></p>
 </form>
-
-<!-- Place this script at the end of the body tag -->
-
-<script>
-window.addEventListener("DOMContentLoaded", function() {
-
-  // get the form elements defined in your form HTML above
-  
-  var form = document.getElementById("my-form");
-  var button = document.getElementById("my-form-button");
-  var status = document.getElementById("my-form-status");
-
-  // Success and Error functions for after the form is submitted
-  
-  function success() {
-    form.reset();
-    button.style = "display: none ";
-    status.innerHTML = "Thanks!";
-  }
-
-  function error() {
-    status.innerHTML = "Oops! There was a problem.";
-  }
-
-  // handle the form submission event
-
-  form.addEventListener("submit", function(ev) {
-    ev.preventDefault();
-    var data = new FormData(form);
-    ajax(form.method, form.action, data, success, error);
-  });
-});
-
-// helper function for sending an AJAX request
-
-function ajax(method, url, data, success, error) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(method, url);
-  xhr.setRequestHeader("Accept", "application/json");
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    if (xhr.status === 200) {
-      success(xhr.response, xhr.responseType);
-    } else {
-      error(xhr.status, xhr.response, xhr.responseType);
-    }
-  };
-  xhr.send(data);
-}
-</script>
 
       </div>
     </div> 
@@ -336,9 +286,9 @@ function ajax(method, url, data, success, error) {
       <div class="row" style="margin-top:5rem;">
         <hr class="f">
         <div class="footer">
-          
+          <footer>
           made with ♥ by Marcel & Daniel. - <a href="http://marcimedia.de">Imprint</a>
-          
+        </footer>
         </div>
       </div>
 
@@ -348,4 +298,52 @@ function ajax(method, url, data, success, error) {
   <script>
     AOS.init();
   </script>
-</body></html>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+    
+      // get the form elements defined in your form HTML above
+      
+      var form = document.getElementById("my-form");
+      var button = document.getElementById("my-form-button");
+      var status = document.getElementById("my-form-status");
+    
+      // Success and Error functions for after the form is submitted
+      
+      function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = "Thanks!";
+      }
+    
+      function error() {
+        status.innerHTML = "Oops! There was a problem.";
+      }
+    
+      // handle the form submission event
+    
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+    
+    // helper function for sending an AJAX request
+    
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+    </script>
+</body>
+</html>
