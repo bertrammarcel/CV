@@ -50,11 +50,8 @@
   </script>
 
 <script>
-  Iterate('onResponse', (question, response) => {
-FS.event('Survey Response', {
-  question: question,
-  response: response,
-});
+Iterate('onResponse', (question, response) => {
+  FS.setUserVars({ [question]: response });
 });
 </script>
 

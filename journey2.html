@@ -49,12 +49,9 @@
   }(window, document,'script','iterate-js','Iterate'));
   </script>
 
-  <script>
-    Iterate('onResponse', (question, response) => {
-  FS.event('Survey Response', {
-    question: question,
-    response: response,
-  });
+<script>
+Iterate('onResponse', (question, response) => {
+  FS.setUserVars({ [question]: response });
 });
   </script>
 
