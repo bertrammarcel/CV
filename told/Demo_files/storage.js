@@ -1,0 +1,1 @@
+const checkLocalStorage=()=>{const test="feature_test";try{localStorage.setItem(test,test),localStorage.removeItem(test),window.parent.postMessage({id:"chat:thirdPartyCookiesEnabled"},"*")}catch(err){window.parent.postMessage({id:"chat:thirdPartyCookiesDisabled"},"*")}};!function(window){try{checkLocalStorage()}catch(error){console.warn(error)}}(window);
