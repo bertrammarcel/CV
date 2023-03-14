@@ -1,7 +1,7 @@
 <html>
 <head>
   <script>
-    const sessionUrl = window.FS.getCurrentSessionURL();
+    const sessionUrl = FS.getCurrentSessionURL();
     (function (w, d, e, v, o, l, t) { w["EvoltWidget"] = o; w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments); }; w[o].l = 1 * new Date(); l = document.createElement(e); t = document.getElementsByTagName(e)[0]; l.async = 1; l.src = v; t.parentNode.insertBefore(l, t); })(window, document, "script", "https://scripts.evoltapp.com/sdk/sdk.js", "evolt");
     evolt('init', '6410925e27d17100146ef57e', { hidden_fields: { 'sessionUrl': sessionUrl } });
     </script>
