@@ -95,9 +95,9 @@ body {
 
 .box {display:flex;background:#F3F2EE;padding: 20px; height:150px;justify-content:flex-end; flex-direction: column;  flex-direction: column; } 
 .box span {font-size:36px; margin-bottom:5px;} 
-.button {display:inline-block;background:#D1410C;padding:15px;color:#FFF;text-decoration:none;border:none;}
-.button:focus {outline: solid 1px #D1410C; outline-offset: 2px;}
-.button:hover{border:none;background:#F05537;color:#FFF;}
+.button {display:inline-block;background:#000;border-radius:4px;padding:15px;color:#FFF;text-decoration:none;border:none;}
+.button:focus {outline: solid 1px #000; outline-offset: 2px;}
+.button:hover{border:none;background:#606060;color:#FFF;}
 label {display:block;margin: 1rem 0;}
 input {padding:15px;margin-right:5px;border-radius: 0;}
 input:focus {outline: solid 1px #000;outline-offset:2px;}
@@ -125,11 +125,12 @@ p {
 a {
   color: #000; 
   border-bottom:1px solid #000;
-  text-decoration:none;}
+  text-decoration:none;
+padding:2px;}
 a:hover {
   color:#F05537;
-  border-bottom:1px solid #F05537; 
-  transition:.5s;}
+  transition:.5s;
+  background:rgba(200,200,200,0.3);}
 a:focus {outline: solid 1px #000;outline-offset:2px;}
 
 /* Lists
