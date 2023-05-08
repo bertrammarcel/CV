@@ -96,8 +96,8 @@ body {
 .box {display:flex;background:#F3F2EE;padding: 20px; height:150px;justify-content:flex-end; flex-direction: column;  flex-direction: column; } 
 .box span {font-size:36px; margin-bottom:5px;} 
 .button {display:inline-block;background:#000;border-radius:4px;padding:15px;color:#FFF;text-decoration:none;border:none;}
-.button:focus {outline: solid 1px #000; outline-offset: 2px;}
-.button:hover{border:none;background:#606060;color:#FFF;}
+.button:focus {outline: solid 1px #000; outline-offset: 2px;padding:15px;}
+.button:hover{border:none;background:#606060;color:#FFF;padding:15px;}
 label {display:block;margin: 1rem 0;}
 input {padding:15px;margin-right:5px;border-radius: 0;}
 input:focus {outline: solid 1px #000;outline-offset:2px;}
